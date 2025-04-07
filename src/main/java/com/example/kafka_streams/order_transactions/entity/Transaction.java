@@ -1,6 +1,7 @@
 package com.example.kafka_streams.order_transactions.entity;
 
 
+import com.example.kafka_streams.order_transactions.entity.types.PaymentType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,5 +22,7 @@ public class Transaction {
     private String zMartNumber;
     private List<String> itemsPurchased;
     private double totalSpent;
+    private PaymentType paymentType;
+
 
 }
