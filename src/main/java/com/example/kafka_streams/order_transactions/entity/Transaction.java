@@ -1,10 +1,12 @@
-package com.example.kafka_streams.order_transactions;
+package com.example.kafka_streams.order_transactions.entity;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,6 +19,7 @@ public class Transaction {
     private String itemPurchased;
     private String zipCode;
     private String zMartNumber;
+    private List<String> itemsPurchased;
     private double totalSpent;
 
 }

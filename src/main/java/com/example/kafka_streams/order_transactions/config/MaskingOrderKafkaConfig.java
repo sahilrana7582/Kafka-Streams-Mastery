@@ -1,7 +1,7 @@
 package com.example.kafka_streams.order_transactions.config;
 
 
-import com.example.kafka_streams.order_transactions.Transaction;
+import com.example.kafka_streams.order_transactions.entity.Transaction;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
