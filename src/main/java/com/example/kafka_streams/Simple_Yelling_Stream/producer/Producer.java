@@ -14,7 +14,6 @@ public class Producer {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    @Scheduled(fixedRate = 5000)
     public void sendMessage() {
         String message = "hello from scheduled producer!";
 
